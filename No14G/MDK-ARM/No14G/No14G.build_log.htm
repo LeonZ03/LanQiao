@@ -1,0 +1,86 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 2279746395@qq.com, 1, LIC=SDA0P-M6BCN-56EQ2-9ZA76-J1CV9-1WPGM
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  D:\Program Files\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.15.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\22797\Desktop\LanQiao\Homework\No14G\MDK-ARM\No14G.uvprojx
+Project File Date:  05/25/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Program Files\Keil_v5\ARM\ARMCC\Bin'
+Build target 'No14G'
+compiling main.c...
+../bsp/ds18b20_hal.h(21): warning:  #1295-D: Deprecated declaration ds_read - give arg types
+  float ds_read();
+../bsp/mymain.h(16): warning:  #1295-D: Deprecated declaration led_set - give arg types
+  extern void led_set();
+../bsp/mymain.h(32): warning:  #1295-D: Deprecated declaration adc_read - give arg types
+  extern float adc_read();
+../bsp/mymain.h(44): warning:  #1295-D: Deprecated declaration led_handle - give arg types
+  extern void led_handle();
+../bsp/mymain.h(47): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(204): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if(para_swit==1)AH+=0.3;
+../Core/Src/main.c(210): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if(fset_swit==1)VP+=0.3;
+../Core/Src/main.c(224): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if(para_swit==1)AH-=0.3;
+../Core/Src/main.c(230): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if(fset_swit==1)VP-=0.3;
+../Core/Src/main.c(364): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				else if(A_data[mem_p]>3.3)dut=100;
+../Core/Src/main.c(365): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				else dut=((float)90/(3.3-VP_use))*A_data[mem_p]+(100.f-297.f/(3.3-VP_use));
+../Core/Src/main.c(365): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				else dut=((float)90/(3.3-VP_use))*A_data[mem_p]+(100.f-297.f/(3.3-VP_use));
+../Core/Src/main.c: 12 warnings, 0 errors
+linking...
+Program Size: Code=23474 RO-data=5258 RW-data=132 ZI-data=3260  
+FromELF: creating hex file...
+"No14G\No14G.axf" - 0 Error(s), 12 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.4.0.pack
+                Keil.STM32G4xx_DFP.1.4.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_No14G
+  D:/Program Files/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/Program Files/ARM/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
